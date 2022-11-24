@@ -30,6 +30,7 @@ public class TestNGTodo3 {
         caps.setCapability("browserName", "Chrome");
         caps.setCapability("version", "latest");
         caps.setCapability("build", System.getenv("LT_BUILD_NAME"));
+        caps.setCapability("tunnel", System.getenv("true"));
         caps.setCapability("name", m.getName() + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
 
