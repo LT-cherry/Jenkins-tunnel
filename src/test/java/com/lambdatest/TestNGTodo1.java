@@ -29,7 +29,7 @@ public class TestNGTodo1 {
         caps.setCapability("platform", "Windows 10");
         caps.setCapability("browserName", "Chrome");
         caps.setCapability("version", "108.0");
-        caps.setCapability("build", "Jenkins with Tunnel");
+        caps.setCapability("build", System.getenv("LT_BUILD_NAME"));
         caps.setCapability("name", "Test11/24");
         caps.setCapability("tunnel", System.getenv("true"));
 //        caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
