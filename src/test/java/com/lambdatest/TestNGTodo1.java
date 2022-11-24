@@ -31,7 +31,7 @@ public class TestNGTodo1 {
         caps.setCapability("version", "108.0");
         caps.setCapability("build", "Jenkins with Tunnel");
         caps.setCapability("name", "Test11/24");
-        caps.setCapability("tunnel", true);
+        caps.setCapability("tunnel", System.getenv("true"));
 //        caps.setCapability("name", m.getName() + " - " + this.getClass().getName());
 //        caps.setCapability("plugin", "git-testng");
 
